@@ -1,0 +1,30 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Unique indentifier",
+      "type": "integer"
+    },
+    "name": {
+      "description": "Patient Name",
+      "type": "string"
+    },
+    "gender": {
+      "description": "Patient gender",
+      "type": "string"
+    },
+    "phone": {
+      "description": "Patient personal phonenumber",
+      "pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$",
+      "type": "string"
+    },
+    "address": {
+      "type": "object",
+      "$ref": "AddressSchema.json#"    
+    }
+  },
+  "required": [ "id", "name", "gender", "phone", "address" ],
+  "title": "patient"
+}
+

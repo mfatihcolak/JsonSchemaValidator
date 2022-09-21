@@ -1,0 +1,14 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "C:\\Users\\pardu\\Source\\Repos\\JsonSchemaValidatorr\\JsonSchemaValidatorr\\AddressSchema.json",
+  "title": "address",
+  "description": "patient address",
+  "type": "object",
+  "properties": {
+    "street": { "type": "string" },
+    "city": { "type": "string" },
+    "country": { "type": "string" },
+    "postCode": {"type": "integer"}
+  },
+  "required": [ "street", "city", "country","postCode" ]
+}
